@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: teal; */
 }
 
 .App-logo {
@@ -7,32 +12,84 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quoteBox {
+  margin: 0 auto;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border-radius: 5px;
+  font-family: "lucida-handwriting";
+}
+
+
+button {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  /* background-color: teal; */
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+button:hover {
+  opacity: .7;
+}
+button:active {
+  opacity: 1;
+}
+
+
+
+.quoteText {
+  font-size: 2em;
+  padding-bottom: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 20px;
+}
+#quoteEmphasis {
+  font-size: 2em;
+}
+
+.button1 {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 10%;
+  left: 5%;
+  width: 6%;
+}
+
+.button2 {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 10%;
+  left: 13%;
+  width: 6%;
+}
+
+.iconImg img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  
 }
