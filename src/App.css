@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: teal; */
 }
 
 .App-logo {
@@ -92,4 +91,10 @@ button:active {
   justify-content: center;
   float: left;
   
+}
+
+@media (max-width:650px){
+  .quoteBox {
+    width: 90%;
+  }
 }
